@@ -11,6 +11,8 @@ class LinkedList : public List
 	public:
 		LinkedList();
 		virtual ~LinkedList();
+		// Ryan: We should always make our attributes private
+		//		 to prevent unwanted access externally.
 		LinkedNode * head_;
 		LinkedNode * tail_;
 };

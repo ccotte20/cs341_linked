@@ -9,6 +9,7 @@ Node::Node(int data) : data_(data)
 	
 }
 
+// Ryan: You could just initialize this to NULL
 Node::Node() : data_(-1)
 {
 	

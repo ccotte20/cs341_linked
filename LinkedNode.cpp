@@ -6,18 +6,23 @@
 
 LinkedNode::LinkedNode(int data) : Node(data)
 {
+	// Ryan: We should really put these in our initialization list.
 	prevNode_ = nullptr;
 	nextNode_ = nullptr;
 }
 
 LinkedNode::LinkedNode() : Node()
 {
+	// Ryan: We should really put these in our initialization list.
 	prevNode_ = nullptr;
 	nextNode_ = nullptr;
 }
 
 LinkedNode::~LinkedNode()
 {
+	// Ryan: We need to check to ensure this is not nullptr
+	//		 otherwise we could try and delete something that
+	//		 that is already null, which would cause a problem.
 	delete nextNode_;
 }
 
